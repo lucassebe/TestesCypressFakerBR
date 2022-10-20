@@ -1,0 +1,25 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "primeiros passos",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "keywords": [
+    "testes"
+  ],
+  "author": "Lucas Sebe",
+  "license": "ISC",
+  "devDependencies": {
+    "@bahmutov/cy-api": "^2.1.3",
+    "cypress": "^10.10.0",
+    "cypress-json-results": "^1.2.1",
+    "faker": "^5.5.3",
+    "gerador-validador-cpf": "^5.0.2"
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^1.4.0",
+    "faker-br": "^0.4.1"
+  }
+}

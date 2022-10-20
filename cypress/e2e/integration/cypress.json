@@ -1,0 +1,5 @@
+{
+    "env": {
+        "API_BASE_URL": "https://cerusbank-portal-api-dev.uc.r.appspot.com/"
+    }
+}
