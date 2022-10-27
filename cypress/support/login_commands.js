@@ -1,4 +1,4 @@
-Cypress.Commands.add('login', (userame, password, captcha) => {
+Cypress.Commands.add('login', (username, password, captcha) => {
     cy.api({
             method: 'POST',
             url: '  https://cerusbank-portal-api-dev.uc.r.appspot.com/auth',
