@@ -1,11 +1,11 @@
+beforeEach(() => {
+    cy.login();
+});
+
 describe('API Employee Create - Test', () => {
-    before(() => {
-        cy.login
-    });
     it('API Employee Create - Test', () => {
         cy.api({
-            token: Cypress.env('token'),
-            authorization: 'bearer ${ token }',
+            auth: { bearer: window.localStorage.token },
             method: 'POST',
             url: '  https://cerusbank-portal-api-dev.uc.r.appspot.com/employees/create',
             body: {
@@ -22,6 +22,8 @@ describe('API Employee Create - Test', () => {
                 "company_id": "924b154e62d645c09edc08dad76b03b8",
                 "mother_full_name": "maemae"
             },
+        }).should((res) => {
+            expect(res.status).to.eq(200)
         })
     })
 })

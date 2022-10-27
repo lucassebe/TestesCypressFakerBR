@@ -1,2 +1,3 @@
 import 'cypress-plugin-api'
-import './login_commands'
+import './commands'
+import "cypress-localstorage-commands"
