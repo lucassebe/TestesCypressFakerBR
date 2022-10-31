@@ -21,6 +21,8 @@ describe('API Employee Create - Test', () => {
                 "company_id": "924b154e62d645c09edc08dad76b03b8",
                 "employee_identifier": randomcpf
             }
+        }).should((response) => {
+            expect(response.status).to.eq(200)
         })
         cy.api({
             auth: { bearer: window.localStorage.token },
