@@ -1,14 +1,15 @@
-import "cypress-localstorage-commands";
+import "cypress-localstorage-commands"; //import local storage commands to save your authentication token
+
 Cypress.Commands.add('login', () => {
 
-    cy.api({
+    cy.api({ //you can use cy.request as well but i prefer use https://github.com/bahmutov/cy-api to see the request on the cypress board.
         method: 'POST',
-        url: '  https://cerusbank-portal-api-dev.uc.r.appspot.com/auth',
+        url: '  https://restful-booker.herokuapp.com/auth',
         body: {
-            "password": "bext2020",
-            "username": "09678304430",
+            "username": "admin",
+            "password": "password123"
         },
     }).then(response => {
-        window.localStorage.setItem('token', response.body.data.token)
+        window.localStorage.setItem('token', response.body.token) //save token to future requests
     })
 });
