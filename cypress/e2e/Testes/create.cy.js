@@ -2,7 +2,7 @@ beforeEach(() => { //use to get the token acess. we don't need to use on this en
     cy.login();
 });
 
-describe('API testing - creating faker variables', () => {
+describe('API testing - creating requests using faker.js', () => {
     const faker = require('faker-br'); //be sure that you're importing faker on your e2e.js file   
     var firstName = faker.name.firstName();
     var lastName = faker.name.lastName();

@@ -2,7 +2,7 @@ import "cypress-localstorage-commands"; //import local storage commands to save 
 
 Cypress.Commands.add('login', () => {
 
-    cy.api({ //you can use cy.request as well but i prefer use https://github.com/bahmutov/cy-api to see the request on the cypress board.
+    cy.api({ //you can use cy.request as well but i prefer use https://github.com/filiphric/cypress-plugin-api to see the request on the cypress board.
         method: 'POST',
         url: '  https://restful-booker.herokuapp.com/auth',
         body: {
