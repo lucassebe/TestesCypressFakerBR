@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-31T12:20:57.118Z",
+    "end": "2023-03-31T12:21:09.707Z",
+    "duration": 12589,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "33529b69-227e-46d9-9a8a-0084fd2d726b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Testes\\frontfaker.cy.js",
+      "file": "cypress\\e2e\\Testes\\frontfaker.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "78a1dcbd-d993-4530-9a70-101818c01a3f",
+          "title": "Front test using faker.js",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visiting CRUD Demo",
+              "fullTitle": "Front test using faker.js Visiting CRUD Demo",
+              "timedOut": null,
+              "duration": 6398,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.grocerycrud.com/v1.x/demo/my_boss_is_in_a_hurry/bootstrap/add');\ncy.get('#field-customerName').type(customerName);\ncy.get('#field-contactLastName').type(contactLastName);\ncy.get('#field-contactFirstName').type(contactFirstName);\ncy.get('#field-phone').type(phone);\ncy.get('#field-addressLine1').type(adresssLine1);\ncy.get('#field-addressLine2').type(adresssLine2);\ncy.get('#field-city').type(city);\ncy.get('#field-state').type(state);\ncy.get('#field-postalCode').type(postalcode);\ncy.get('#field-country').type(country);\ncy.get('#field-salesRepEmployeeNumber').type(salesRepEmployeeNumber);\ncy.get('#field-creditLimit').type(creditLimit);\ncy.get('#save-and-go-back-button').click();",
+              "err": {},
+              "uuid": "9ff03361-6ba3-4552-b373-091cf31d28c9",
+              "parentUUID": "78a1dcbd-d993-4530-9a70-101818c01a3f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9ff03361-6ba3-4552-b373-091cf31d28c9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6398,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "nyan",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "consoleReporter": "nyan",
+        "reportDir": "cypress/report/cypressapitests",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "ddmmyyyy_HHMMss",
+        "reportFilename": "[name]-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
