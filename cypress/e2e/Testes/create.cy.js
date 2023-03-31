@@ -11,7 +11,7 @@ describe('API testing - creating requests using faker.js', () => {
     it('API testing - sending a request', () => {
         cy.api({
             method: 'POST',
-            url: 'https://restful-booker.herokuapp.com/booking',
+            url: Cypress.env('URL_TEST') + '/booking',
             body: {
                 "firstname": firstName,
                 "lastname": lastName,

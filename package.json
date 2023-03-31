@@ -6,7 +6,8 @@
     "scripts": {
         "start": "my-server -p 3030",
         "cy:run": "cypress run",
-        "test": "start-server-and-test start http://localhost:3030 cy:run"
+        "test": "start-server-and-test start http://localhost:3030 cy:run",
+        "open": "npx cypress open"
     },
     "keywords": [
         "testes"
@@ -15,15 +16,17 @@
     "license": "ISC",
     "devDependencies": {
         "@bahmutov/cy-api": "^2.1.3",
-        "cypress": "^11.1.0",
+        "cypress": "^12.9.0",
         "cypress-json-results": "^1.2.1",
-        "cypress-localstorage-commands": "^2.2.1",
+        "cypress-localstorage-commands": "^2.2.2",
         "faker": "^5.5.3",
         "gerador-validador-cpf": "^5.0.2",
         "start-server-and-test": "^1.14.0"
     },
     "dependencies": {
+        "cypress-mochawesome-reporter": "^3.3.0",
         "cypress-plugin-api": "^1.4.0",
-        "faker-br": "^0.4.1"
+        "faker-br": "^0.4.1",
+        "mochawesome": "^7.1.3"
     }
 }

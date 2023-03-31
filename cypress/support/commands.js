@@ -4,10 +4,10 @@ Cypress.Commands.add('login', () => {
 
     cy.api({ //you can use cy.request as well but i prefer use https://github.com/filiphric/cypress-plugin-api to see the request on the cypress board.
         method: 'POST',
-        url: '  https://restful-booker.herokuapp.com/auth',
+        url: Cypress.env('URL_TEST') + '/auth',
         body: {
-            "username": "admin",
-            "password": "password123"
+            "username": Cypress.env("username"),
+            "password": Cypress.env("password")
         },
     }).then(response => {
         window.localStorage.setItem('token', response.body.token) //save token to future requests
